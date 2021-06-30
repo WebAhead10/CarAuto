@@ -1,0 +1,24 @@
+{
+  "name": "acr-auto-complete",
+  "version": "1.0.0",
+  "description": "An introduction to accessing and serving files with Node.",
+  "main": "index.js",
+  "scripts": {
+    "gettt": "nodemon index.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebAhead10/ACRepo-ANE.git"
+  },
+  "keywords": [],
+  "author": "No Name",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://https://github.com/WebAhead10/ACRepo-ANE/issues"
+  },
+  "homepage": "https://github.com/WebAhead10/ACRepo-ANE#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.8"
+  }
+}
