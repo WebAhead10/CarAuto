@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 2% 10%;
+    text-align: center;
+    align-items: center;
+}
+h2{
+    text-align: center;
+}
+.searchbar{
+    width: 50%;
+    height: 15%;
+    font-size: 18px;
+    padding:1%;
+}
+.optionbar{
+    width: 50%;
+    height: 15%;
+    font-size: 14px;
+    padding:1%;
+}

@@ -1,14 +1,14 @@
-const homeHandler = require("./handler/home");
-const publicHandler = require("./handler/public");
-const missingHandler = require("./handler/missing");
-const autocompleteHandler = require("./handler/autocomplete");
+const homeHandler = require("./handlers/home");
+const publicHandler = require("./handlers/public");
+const missingHandler = require("./handlers/missing");
+const autocompleteHandler = require("./handlers/autocomplete");
 
 
 function router(request, response) {
   const url = request.url;
   if (url === "/") {
     homeHandler(request, response);
-  } else if (url.includes("media")) {
+  } else if (url.includes("public")) {
     publicHandler(request, response);
   } else if(url === "/autocomplete"){
     autocompleteHandler(request, response);
