@@ -15,9 +15,9 @@ function autocompleteHandler(request, response){
             return Name.match(result);
         });
         // console.log(car);
-
+        let newcar=car.slice(0,10);
         response.writeHead(200, { "content-type": "application/json" });
-        response.end(JSON.stringify(car));
+        response.end(JSON.stringify(newcar));
     })
 }
 
