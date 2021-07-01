@@ -8,6 +8,7 @@
 // const div = document.createElement("div");
 const input = document.getElementById("searchbar");
 const op = document.getElementById("brow");
+// const op = document.getElementsByTagName("datalist");
 
 
 input.addEventListener("input", (event) => {
@@ -21,10 +22,15 @@ input.addEventListener("input", (event) => {
       console.log(data);
       data.forEach(element => {
         const option = document.createElement("option");
-        option.value = element.name;
+        // let result = element.map(({ name }) => name)
+        option.value= element.Name;
+        console.log(option.value);
+        console.log(element.Name);
         option.id="optionbar";
         option.className="optionbar";
+        console.log(option.value);
         op.appendChild(option);
+        
       });
     })
     .catch((err) => {
